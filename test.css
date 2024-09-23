@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+@keyframes borderMove {  
+	50%  {    
+		background-position: 100% 50%; 
+  }
+}
+body {
+  margin: 0;
+  background: linear-gradient(200deg, rgba(190,40,255,1) 20%, rgba(40,150,255,1) 65%, rgba(0,150,200,1) 70%);
+  background-size: 1000% 1000%;
+  background-position: 0 50%;	
+  animation: borderMove 70s alternate infinite;
+}
+h1 {
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+p {
+  letter-spacing: 1px;
+  font-size:25px;
+  color: #000;
+  padding-left: 550px;
+  padding-right: 550px;
+  padding-top: 10px;
+}
+.nav-masthead .nav-link {
+  padding:.25rem 0;
+  font-weight:700;
+  color:black;
+  background:transparent;
+  border-bottom:.25rem solid transparent;
+}
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(0, 255, 255, .25);
+  color: #3657FF;
+}
+.nav-masthead .nav-icons:hover,
+.nav-masthead .nav-icons:focus {
+  border-bottom-color: rgba(0, 255, 255, .25);
+  color: #3657FF;
+}
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+.nav-masthead .active {
+  color:#111EB0;
+  border-bottom-color:#111EB0;
+}
+.nav-icons {
+  padding:.25rem 0;
+  font-weight:700;
+  color:black;
+  background-color:transparent;
+  border-bottom:.25rem solid transparent;	
+}
+.header {
+  position:relative;
+  text-align:center;
+  color:black;
+}
+.innerHeader {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+.flex { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; 
+  min-height:100px;
+  max-height:150px;
+}
+.content {
+  position:relative;
+  text-align:center;
+  background-color:rgb(0,80,255);
+  height:100vh;
+}
+.wavezAnimation > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.wavezAnimation > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.wavezAnimation > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.wavezAnimation > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.wavezAnimation > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+img {
+	border: 5px solid rgb(0,80,255);
+	width: 100%;
+	height: auto;
+	max-width:490px; 
+	max-height:550px;
+	border-radius:15px;
+}
+.diffPadding {
+  padding:0px;
+}
+@media screen and (max-width: 2000px){
+	p {
+  padding:10px;
+ }
+}
+@media screen and (max-width: 1000px) {
+	.content {
+		height:160vh;
+	}
+}
+@media screen and (max-height: 1165px) {
+	.content {
+		height:180vh;
+	}
+}
+@media screen and (max-height: 1030px) {
+	.content {
+		height:200vh;
+	}
+}
+@media screen and (max-height: 940px) {
+	.content {
+		height:220vh;
+	}
+}
+@media screen and (max-height: 880px) {
+	.content {
+		height:240vh;
+	}
+}
